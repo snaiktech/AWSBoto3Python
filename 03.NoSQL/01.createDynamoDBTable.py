@@ -14,7 +14,7 @@ table =dynamodb.create_table(
             "AttributeName":"Email",
             "KeyType":"RANGE"
         }],
-    AttributeDefinations=[
+    AttributeDefinitions=[
         {
             "AttributeName":"Name",
             "AttributeType":"S"
@@ -23,7 +23,11 @@ table =dynamodb.create_table(
             "AttributeName":"Email",
             "AttributeType":"S"
         }
-    ]
+    ],
+    ProvisionedThroughput={
+                'ReadCapacityUnits':1,
+                'WriteCapacityUnits':1
+            }
 )
 
 print(table)
