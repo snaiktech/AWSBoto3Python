@@ -12,3 +12,5 @@ response=client.create_db_instance(
 );
 
 print(response)
+
+# mysql -h mujahed-db-instance-01.cnfs3veczxfo.ap-south-1.rds.amazonaws.com -u admin01 -p
