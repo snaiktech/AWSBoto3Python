@@ -9,5 +9,9 @@ role=iam.Role(ROLE_NAME)
 role.attach_policy(
     PolicyArn="arn:aws:iam::aws:policy/AmazonS3FullAccess"
 )
-
 print("Policy Attached...")
+
+# role.detach_policy(
+#     PolicyArn="arn:aws:iam::aws:policy/AmazonS3FullAccess"
+# )
+# print("Policy Detached...")
